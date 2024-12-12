@@ -1,12 +1,12 @@
 #Функция ввода пароля
-def input_password():
-    passw = input("Введите пароль: ")
-    return passw
+def enter_password():
+    password_input = input("Введите пароль: ")
+    return password_input
 
 
 #Функция проверки пароля
-def check_password(pas):
-    if pas == password:
+def check_password(password_check):
+    if password_check == password:
         return False
     else:
         return True
@@ -14,7 +14,6 @@ def check_password(pas):
 
 #Основное тело программы
 password = "password"
-while check_password(input_password()):
+while check_password(enter_password()):
     print("Ошибка! Неверный пароль!")
-    print("Введите пароль еще раз!")
 print("Совершен вход в систему!")
